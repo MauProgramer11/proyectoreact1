@@ -1,147 +1,44 @@
-/* Reset CSS */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+body {
   font-family: Arial, sans-serif;
 }
 
-body {
-  background-color: #f8f9fa;
-  color: #333;
-  line-height: 1.6;
-}
-
-/* Header */
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
+header,
+footer {
   background-color: #333;
-  color: white;
-}
-
-.logo {
-  color: white;
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.nav ul {
-  list-style: none;
-  display: flex;
-  margin: 0;
-  padding: 0;
-}
-
-.nav li {
-  margin-left: 20px;
-}
-
-.nav a {
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-  transition: color 0.3s ease;
-}
-
-.nav a:hover {
-  color: #ddd;
-}
-
-/* Main container */
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 20px auto;
-  padding: 20px;
-  background: white;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-}
-
-/* Car list */
-.car-list div {
-  border-bottom: 1px solid #ddd;
-  padding: 10px 0;
+  color: #fff;
   text-align: center;
-}
-
-.car-list img {
-  width: 100%;
-  max-width: 300px;
-  border-radius: 8px;
-}
-
-.car-list h2 {
-  font-size: 20px;
-  color: #007bff;
-}
-
-.car-list p {
-  margin: 5px 0;
-}
-
-.car-list a {
-  color: #007bff;
-  text-decoration: none;
-}
-
-.car-list a:hover {
-  text-decoration: underline;
-}
-
-/* Car details */
-.car-details {
-  text-align: center;
-}
-
-.car-details img {
-  width: 100%;
-  max-width: 600px;
-  border-radius: 8px;
-  margin-bottom: 20px;
-}
-
-.car-details h2 {
-  font-size: 24px;
-  color: #007bff;
-}
-
-.car-details p {
-  margin: 10px 0;
-}
-
-/* Contact form */
-.contact-form div {
-  margin-bottom: 15px;
-}
-
-.contact-form label {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
   padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
 }
 
-.contact-form button {
-  display: inline-block;
-  padding: 10px 20px;
+.car-item {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  max-width: 300px;
+}
+
+.car-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+button {
   background-color: #007bff;
   color: white;
   border: none;
-  border-radius: 4px;
+  padding: 10px 20px;
   cursor: pointer;
 }
 
-.contact-form button:hover {
+button:hover {
   background-color: #0056b3;
+}
+
+.car-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
