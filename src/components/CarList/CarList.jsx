@@ -103,7 +103,7 @@ const cars = [
 ];
 
 const CarList = () => {
-  const [sortOrder, setSortOrder] = useState("asc"); // 'asc' o 'desc'
+  const [sortOrder, setSortOrder] = useState("asc");
 
   const sortedCars = [...cars].sort((a, b) => {
     return sortOrder === "asc"
